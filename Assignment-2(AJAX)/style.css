@@ -1,0 +1,152 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Main Content */
+#mainContent {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+}
+
+.section-title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+#userTable thead {
+  background: #667eea;
+  color: white;
+}
+
+#userTable th,
+#userTable td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#userTable tr:hover {
+  background: #f2f2f2;
+}
+
+/* Add More Button */
+#addMoreBtn {
+  margin-top: 25px;
+  background-color: #28a745;
+  transition: background 0.3s;
+}
+
+#addMoreBtn:hover {
+  background-color: #218838;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}

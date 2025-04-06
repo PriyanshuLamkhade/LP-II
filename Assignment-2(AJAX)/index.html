@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beautiful User Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Popup Form -->
+  <div id="popupForm" class="card">
+    <h2>Register User</h2>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+    </div>
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent">
+    <h2 class="section-title">Registered Users</h2>
+    <div class="table-container">
+      <table id="userTable">
+        <thead>
+          <tr><th>Name</th><th>Email</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button id="addMoreBtn">➕ Add More</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
