@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Mobile Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile & jQuery -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div data-role="page" id="mainPage" class="custom-page">
+
+  <div data-role="header" class="custom-header">
+    <h1>BrightOne</h1>
+  </div>
+
+  <div role="main" class="ui-content custom-content">
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <h2>Welcome to BrightOne</h2>
+      <p>Your modern, stylish mobile experience.</p>
+      <a href="#about" class="ui-btn ui-btn-inline custom-btn scroll-link">Learn More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>We blend design and tech to build beautiful mobile-first websites. Scroll down to contact us.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your name">
+        <input type="email" id="email" placeholder="Your email">
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="submit" class="ui-btn custom-btn">Send</button>
+      </form>
+      <div id="formResponse" class="form-response"></div>
+    </section>
+
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2025 BrightOne</h4>
+  </div>
+
+</div>
+
+</body>
+</html>
