@@ -1,0 +1,9 @@
+docker build -t image_name .     //to build the image_name
+docker images                    //to see all images available
+docker run image_name              //to make the container (run the image)
+docker run -p 3000:3000 image_name //port mapping
+docker ps                           //to see all containers
+docker kill id/name                 //to kill container
+docker exec -it my_container bash   //to open image in terminal
+
+
